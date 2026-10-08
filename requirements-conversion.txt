@@ -1,5 +1,5 @@
 numpy==2.3.5
-torch==2.5.0
+torch==2.13.0
 transformers==4.53.0
 coremltools==9.0
 argmaxtools==0.1.23
