@@ -1,0 +1,6 @@
+numpy==2.3.5
+torch==2.5.0
+transformers==4.53.0
+coremltools==9.0
+argmaxtools==0.1.23
+whisperkit @ git+https://github.com/argmaxinc/whisperkittools.git@84f77a83c8f530022ae55fbb1a64b3351ef63c7a

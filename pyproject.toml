@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "music-whisper-coreml"
+version = "0.1.0"
+description = "Music-Whisper conversion and caption inference with Core ML"
+readme = "README.md"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dynamic = ["optional-dependencies"]
+
+[project.urls]
+Repository = "https://github.com/kiosion/music-whisper-coreml"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.dynamic.optional-dependencies]
+conversion = {file = ["requirements-conversion.txt"]}
+runtime = {file = ["requirements-runtime.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["src"]

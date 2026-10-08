@@ -1,0 +1,8 @@
+include README.md LICENSE requirements-conversion.txt requirements-runtime.txt
+recursive-include src *.py
+recursive-include tests *.py
+recursive-include swift *.swift
+recursive-include examples *.py
+prune swift/.build
+prune swift/.swiftpm
+global-exclude __pycache__ *.py[cod] .DS_Store
